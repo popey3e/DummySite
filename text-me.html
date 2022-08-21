@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Me!</title>
+    <script src="https://kit.fontawesome.com/5e5636680d.js" crossorigin="anonymous"></script>
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+
+    body, p {
+        padding: 0;
+        margin: 0;
+        font-size: 1.5em;
+        color: azure;
+        font-family: 'Dosis', sans-serif;
+    }
+
+    .ans-section {
+        width: 300px;     
+        padding: 0;   
+    }
+
+    h1,h2 {
+        margin-bottom: 4%;
+        transition: .2s;
+        letter-spacing: 10px;
+    }
+    h1:hover,h2:hover {
+        color: rgb(255, 196, 69);
+        font-size: 1.4em;
+    }
+
+    h1 {
+        text-decoration: underline;
+    }
+
+    a {
+        text-decoration: none;
+        color: #fff;
+    }    
+
+    .hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: rgba(0,0,0,.5);
+        color: #fff;
+        position: relative;
+        min-height: 100vh;
+        overflow: hidden;
+    }
+
+    .video{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        min-height: 100%;
+        min-width: 100%;
+        z-index: -9999;
+    }
+</style>
+<body>
+
+    <div class="hero">
+        <video class="video" src="videoplayback.mp4" autoplay muted loop></video>
+        <div class="main-content">
+
+            <div class="ans-section">
+
+                <a href="https://api.whatsapp.com/send?phone=6281218055705&text=Hi.." target="_blank">
+                    <h2 class="fa-brands fa-whatsapp">&nbspText Me.</h2>
+                </a>
+                
+                <a href="index.html" id="btn-no">
+                    <h1>back</h1>
+                </a>
+
+            </div>    
+        </div>
+    </div>
+    
+</body>
+</html>
