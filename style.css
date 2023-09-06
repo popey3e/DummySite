@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+
+body,
+p {
+    padding: 0;
+    margin: 0;
+    font-size: 1.7em;
+    color: rgb(207, 207, 207);
+    text-shadow: 0 0 2px #fff;
+    font-weight: bolder;
+    font-family: 'Dosis', sans-serif;
+}
+
+.main-content {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ans-section {
+    margin: 2%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    margin-bottom: 4%;
+    font-size: 1.7em;
+    transition: .2s;
+    letter-spacing: 5px;
+}
+h2:hover {
+    color: rgb(255, 196, 69);
+    transform: scale(.9);
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}  
+
+button {
+    padding: 8px;
+    border-radius: 10px;
+    transition: .3s;
+    background-color: rgba(255, 246, 218, .5);
+    font-weight: bolder;
+    font-size: 0.7em;
+    color: rgb(51, 51, 51);
+    font-family: 'Dosis', sans-serif;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgba(255, 196, 69, .5);
+    transform: scale(.9);
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, .5);
+    color: #fff;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    min-height: 100%;
+    min-width: 100%;
+    z-index: -9999;
+}
+
+@media only screen and (max-width: 320px) {
+    h2 {
+        font-size: 18px;
+    }
+
+    .main-content {
+        font-size: 18px;
+    }
+
+    .main-content button {
+        padding: 8px;
+    }
+}
